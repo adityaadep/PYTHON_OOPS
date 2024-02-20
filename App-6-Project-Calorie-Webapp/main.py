@@ -38,6 +38,8 @@ class CalorieForm(Form):
     button = SubmitField('Calculate')
 
 
+
+
 app.add_url_rule('/', view_func=Homepage.as_view('home_page'))
 app.add_url_rule('/calories_form', view_func=CaloriePage.as_view('calories_form_page'))
 
